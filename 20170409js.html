@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      p{
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+
+    <input type="text" placeholder="请输入数字1" id="txt1">
+    <p>*</p>
+    <input type="text" id="txt2" placeholder="请输入数字2" >
+    <p>=</p>
+    <input type="text" id="txt3" value="结果">
+    <input type="button" id="btn1" value="计算">
+
+    <script>
+    btn1.onclick=function()
+    {
+      var oTxt1=document.getElementById('txt1');
+      var oTxt2=document.getElementById('txt2');
+      var oTxt3=document.getElementById('txt3');
+
+      var i=(+oTxt1.value) * (+oTxt2.value);
+      oTxt3.value=i;
+    }
+
+    </script>
+
+
+  </body>
+</html>
